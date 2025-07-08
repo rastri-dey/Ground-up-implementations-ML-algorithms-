@@ -1,2 +1,2 @@
 # Ground-up implementations of ML algorithms 
-This is the collection of pure implementations on machine learning algorithms without any external framework overhead, using only standard python libraries with mathematical trnsparency.
+This is the collection of pure implementations on machine learning algorithms without any external framework overhead, using only standard python libraries with mathematical transparency.
