@@ -3,4 +3,4 @@ This is the collection of machine learning algorithms using deep learning framew
 
 | # | ML Algorithm | Framework | Dataset | Github | Collab |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Multilayer Perceptron | PyTorch | CIFAR10 | [Github](MLP_Pytorch.py) | [Collab](https://colab.research.google.com/drive/1AsAvYbwavoH4ZL1THCsmTUkItzsRW63f#scrollTo=3BFbX8pRZA7Z) |
+| 1 | Multilayer Perceptron | PyTorch | CIFAR10 | [Github](MLP_cifar_pytorch.py) | [Colab](https://colab.research.google.com/drive/1AsAvYbwavoH4ZL1THCsmTUkItzsRW63f#scrollTo=3BFbX8pRZA7Z) |
