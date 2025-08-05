@@ -137,6 +137,11 @@ optimizer = optim.SGD(model.parameters(), lr=learning_rate)
 # Loss function
 loss_fn = nn.CrossEntropyLoss()
 
+'''
+Losses: https://docs.pytorch.org/docs/stable/nn.html#loss-functions
+Optimizers: https://docs.pytorch.org/docs/stable/optim.html#torch.optim.Optimizer
+'''
+
 for epoch in range(n_epochs):
     for imgs, labels in train_loader:
         # Here ninputs expects A 2D tensor [batch_size, H*W*C]

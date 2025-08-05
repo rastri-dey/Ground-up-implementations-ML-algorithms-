@@ -28,10 +28,18 @@ A tuple of 2 tuples, each tuple containing 2 NumPy arrays
 
 model = keras.Sequential(
     [
-        keras.layers.Flatten(input_shape=(28,28)),
+        keras.layers.Flatten(input_shape = (28,28)),
         keras.layers.Dense(128, activation = tf.nn.relu),
         keras.layers.Dense(128, activation = tf.nn.relu),
         keras.layers.Dense(10, activation = tf.nn.softmax)
     ]
 )
+
 model.summary()
+
+## Compile the model 
+model.compile(optimizer = "adam", loss = "sparse_categorical_crossentropy", metrics = ["accuracy"])
+'''
+Losses: https://www.tensorflow.org/api_docs/python/tf/keras/losses
+Optimizers: https://www.tensorflow.org/api_docs/python/tf/keras/optimizers
+'''
