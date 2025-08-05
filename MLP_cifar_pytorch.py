@@ -14,6 +14,7 @@ Steps:
     # Zeros the gradient of model parameters
     # Backpropagation (calculate backward loss)
     # Update weights using Optimizer
+# Predict the model output with test data
 '''
 
 ## Import Libraries
@@ -25,6 +26,7 @@ import torch.optim as optim
 import torchvision
 from torchvision import datasets
 from torchvision import transforms
+import matplotlib.pyplot as plt
 
 ## Get the Dataset
 
@@ -158,4 +160,25 @@ for epoch in range(n_epochs):
     acc_val = accuracy(model, val_loader)
     print(f"Epoch: {epoch} Batch_loss: {loss} Accuracy: {acc_val}")
 
-    
+## Predict the model output on test data
+test_images, test_label = next(iter(val_loader))
+
+with torch.no_grad:
+    outputs = model(test_images.view(test_images.shape[0],-1))
+    _, predict_label = torch.max(outputs, dim=1)
+
+# Class names for CIFAR10
+class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+
+fig = plt.figure(figsize=(10,10))
+for i in range(16, len(test_images)):
+    ax = fig.add_subplot(4, 4, i+1, xticks = [], yticks = [])
+    # Unnormalize the images
+    # Matplotlib accepts the images in format: [H, W, C]
+    img = test_images[i].permute(1,2,0) * sigma + mu
+    ax.imshow(img)
+    color = "green" if predict_label[i]==test_label[i] else "red"
+    ax.set_title(f"Predict: {class_names[predict_label[i]]}, Actual: {class_names[test_label[i]]}", color = color)
+
+plt.tight_layout()
+plt.show()

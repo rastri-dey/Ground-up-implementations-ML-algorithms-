@@ -10,7 +10,7 @@ Steps:
 # Compile the model (Optimizer, Loss function)
 # Fit the model (trained data, epochs)
 # Calculate the accuracy for train data, test data
-# Predict the model (test data)
+# Predict the model output (test data)
 '''
 
 ## Import the libraries
@@ -43,3 +43,19 @@ model.compile(optimizer = "adam", loss = "sparse_categorical_crossentropy", metr
 Losses: https://www.tensorflow.org/api_docs/python/tf/keras/losses
 Optimizers: https://www.tensorflow.org/api_docs/python/tf/keras/optimizers
 '''
+
+## Model fitting
+model.fit(train_images, train_labels, epochs = 5)
+
+## Evaluate the model
+# Calculate the accuracy of trained data
+train_acc, train_loss = model.evaluate(train_images, train_labels)
+print(f"Training Accuracy: {train_acc}")
+
+# Calculate the accuracy of test data
+test_acc, test_loss = model.evaluate(test_images, test_labels)
+print(f"Test Accuracy: {test_acc}")
+
+## Predict the test data
+
+
