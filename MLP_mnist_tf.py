@@ -57,5 +57,15 @@ test_acc, test_loss = model.evaluate(test_images, test_labels)
 print(f"Test Accuracy: {test_acc}")
 
 ## Predict the test data
+predict_labels = model.predict(test_images)
 
+fig = plt.figure(figsize=(10,10))
+for i in range(min(16, len(test_images))):
+    predict_label = predict_labels[i].argmax()
+    ax = fig.add_subplot(4, 4, i+1, xticks=[], yticks=[])
+    ax.imshow(test_images[i], cmap = plt.cm.binary)
+    color = "green" if predict_label == test_labels[i] else "red"
+    ax.set_title(f"Predict: {predict_label}, Actual: {test_labels[i]}", color=color)
 
+plt.tight_layout()
+plt.show()
