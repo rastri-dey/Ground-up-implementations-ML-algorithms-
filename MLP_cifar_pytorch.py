@@ -171,7 +171,7 @@ with torch.no_grad:
 class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
 
 fig = plt.figure(figsize=(10,10))
-for i in range(16, len(test_images)):
+for i in range(min(16, len(test_images))):
     ax = fig.add_subplot(4, 4, i+1, xticks = [], yticks = [])
     # Unnormalize the images
     # Matplotlib accepts the images in format: [H, W, C]
