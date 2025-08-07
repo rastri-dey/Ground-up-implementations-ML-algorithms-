@@ -4,4 +4,4 @@ This is the collection of machine learning algorithms using deep learning framew
 | # | ML Algorithm | Framework | Dataset | Github | Colab |
 | --- | --- | --- | --- | --- | --- |
 | 1 | Multilayer Perceptron | PyTorch | CIFAR10 | [Github](MLP_cifar_pytorch.py) | [Colab](https://colab.research.google.com/drive/1AsAvYbwavoH4ZL1THCsmTUkItzsRW63f#scrollTo=3BFbX8pRZA7Z) |
-| 2 | Multilayer Perceptron | Tensorflow | MNIST | [Github](MLP_mnist_tf.py)  | [Colab](https://colab.research.google.com/drive/181pH1blH_Cg_J9_eyCiFvR-r-pqa6npC#scrollTo=9wXouEw5cVEd) |
+| 2 | Multilayer Perceptron | Tensorflow | MNIST | [Github](MLP_mnist_tf.py)  | [Colab](https://colab.research.google.com/drive/181pH1blH_Cg_J9_eyCiFvR-r-pqa6npC#scrollTo=9wXouEw5cVEd) | 
