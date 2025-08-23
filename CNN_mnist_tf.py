@@ -35,16 +35,20 @@ print(train_images.shape, test_images.shape)
 
 ## Define the Model
 '''
- Convolutional Layers require: No. of Filters, Filter size, Activation
- We are using Convolutional 2D for spatial image data of (H*W) as dimensions
- Conv2D allows convolution over only H, W of images
- With 3D images, the filter size implicitly considers a depth equivalent to image depth 
- Convolutional 1D is for time-series data for example and
- Convolutional 3D is for video images, where convolution happens over time in 
- addition to the spatial (H*W) dimensions
- ReLu helps in gradient calculation during Backpropagation
- Softmax in the final layer helps in giving a probability distribution over all the classes
- where the probabilities sum upto 1, this is a very interpretable output
+CNN: https://keras.io/api/layers/convolution_layers/convolution2d/
+
+Convolutional Layers require: No. of Filters, Filter size - Everything else has a default value
+Activation units (default is None) 
+
+We are using Convolutional 2D for spatial image data of (H*W) as dimensions
+Conv2D allows convolution over only H, W of images
+With 3D images, the filter size implicitly considers a depth equivalent to image depth 
+Convolutional 1D is for time-series data for example and
+Convolutional 3D is for video images, where convolution happens over time in 
+addition to the spatial (H*W) dimensions
+ReLu helps in gradient calculation during Backpropagation
+Softmax in the final layer helps in giving a probability distribution over all the classes
+where the probabilities sum upto 1, this is a very interpretable output
 '''
 model = models.Sequential(
     [
@@ -63,6 +67,11 @@ model.summary()
 
 ## Compile the Model
 model.compile(optimizer = "adam", loss = "sparse_categorical_cross_entropy", metrics = ["accuracy"])
+'''
+# If in metrics, we do not add accuracy then only loss will be computed through the loss fn
+# By explicitly mentioning accuracy, we can calculate accuracy along with loss through 
+# model.evaluate() method
+'''
 
 ## Model Fitting, Model Evaluation & Model predictions
 
