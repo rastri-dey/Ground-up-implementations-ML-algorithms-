@@ -43,6 +43,7 @@ Activation units (default is None)
 We are using Convolutional 2D for spatial image data of (H*W) as dimensions
 Conv2D allows convolution over only H, W of images
 With 3D images, the filter size implicitly considers a depth equivalent to image depth 
+Kernel height is always the image channel dimension
 Convolutional 1D is for time-series data for example and
 Convolutional 3D is for video images, where convolution happens over time in 
 addition to the spatial (H*W) dimensions
