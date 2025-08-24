@@ -1,6 +1,6 @@
 '''
 ML Algorithm: Multilayer Perceptron
-Deep Learning Framework: Pytorch
+Deep Learning Framework: PyTorch
 Dataset: CIFAR10
 
 Steps:
