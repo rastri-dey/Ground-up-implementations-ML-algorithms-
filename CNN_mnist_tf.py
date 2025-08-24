@@ -94,5 +94,6 @@ for epoch in range(n_epochs):
 
 print(predictions.shape)
 
+
 ## Predict and visulaize the final outputs over test images 
     
