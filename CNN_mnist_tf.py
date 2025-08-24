@@ -17,7 +17,6 @@ Steps:
     Calculate the training loss, accuracy
     Calculate the test loss, accuracy
 # Predict the test images and visualize output
-
 '''
 
 ## Import Libraries
