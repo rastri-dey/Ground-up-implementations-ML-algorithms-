@@ -81,7 +81,7 @@ for epoch in range(n_epochs):
 
     # Fit the model with training images
     model.fit(train_images, train_labels, epochs = 1)
-    print(f"Time spent on training:{0.3f}".format(time() - time_start))
+    print("Time spent on training:{0.3f}".format(time() - time_start))
 
     # Calculate the training loss & training accuracy
     train_loss, train_acc = model.evaluate(train_images, train_labels)
