@@ -43,3 +43,17 @@ from torchvision import datasets, transforms
 import matplotlib.pyplot as plt
 import time
 
+## Check the enabled device 
+print(f"Pytorch version: {torch.__version__}") # Check the torch version
+
+# Checks if a CUDA-capable GPU is detected and accessible by PyTorch
+if torch.cuda.is_available():
+    device = torch.device("cuda:0") # Computations to be performed on GPU
+else:
+    device = torch.device("cpu") # Computations to be performed on CPU
+print(device)
+'''
+"cuda:0" indicates first GPU in a system of GPUs
+'''
+## Get the dataset
+
