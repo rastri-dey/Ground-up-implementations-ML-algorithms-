@@ -96,4 +96,13 @@ print(predictions.shape)
 
 
 ## Predict and visulaize the final outputs over test images 
-    
+# Class names for CIFAR10
+class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+
+fig = plt.figure(figsize=(10,10))
+for i in range(min(16, len(test_images))):
+    ax = fig.add_subplot(4, 4, i+1, xticks = [], yticks = [])
+    img = test_images[i]
+    ax.imshow(img)
+    color = "green" if predictions[i]==test_labels[i] else "red"
+    ax.title(f"Correct: {class_names[test_labels[i]]}, Predicted: {class_names[predictions[i]]}", color = color)  
