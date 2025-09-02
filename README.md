@@ -2,7 +2,7 @@
 This is the collection of machine learning algorithms using deep learning frameworks like PyTorch and Tensorflow that seamlessly integrate with GPUs and other accelerators to train large models on massive datasets, in a reasonable amount of time.
 
 | # | ML Algorithm | Framework | Dataset | Github | Colab | Train Time | Accuracy | Notes |
-| --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Multilayer Perceptron | PyTorch | CIFAR10 | [Github](MLP_cifar_pytorch.py) | [Colab](MLP_cifar_pytorch.ipynb) |
 | 2 | Multilayer Perceptron | Tensorflow | MNIST | [Github](MLP_mnist_tf.py)  | [Colab](MLP_mnist_tf.ipynb) | 
 | 3 | CNN | PyTorch | CIFAR10 | [Github](CNN_cifar_pytorch.py)  | [Colab](CNN_cifar_pytorch.ipynb) | | | Consider this as the perfect base reference for all PyTorch Models |
