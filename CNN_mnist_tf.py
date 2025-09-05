@@ -53,9 +53,9 @@ where the probabilities sum upto 1, this is a very interpretable output
 model = models.Sequential(
     [
         layers.Conv2D(32, (3,3), activation = "relu", input_shape = (28,28,1)), # Conv Layer has 32 filters of (3*3)
-        layers.MaxPooling2D((2,2), activation = "relu"), # Max Pooling layer of size (2,2)
+        layers.MaxPooling2D((2,2)), # Max Pooling layer of size (2,2)
         layers.Conv2D(64, (3,3), activation = "relu"), 
-        layers.MaxPooling2D((2,2), activation = "relu"),
+        layers.MaxPooling2D((2,2)),
         layers.Conv2D(64, (3,3), activation  = "relu"),
         layers.Conv2D(64, (3,3), activation = "relu"),
         layers.Flatten(), # Convert to a single dimension
@@ -66,7 +66,7 @@ model = models.Sequential(
 model.summary()
 
 ## Compile the Model
-model.compile(optimizer = "adam", loss = "sparse_categorical_cross_entropy", metrics = ["accuracy"])
+model.compile(optimizer = "adam", loss = "sparse_categorical_crossentropy", metrics = ["accuracy"])
 '''
 # If in metrics, we do not add accuracy then only loss will be computed through the loss fn
 # By explicitly mentioning accuracy, we can calculate accuracy along with loss through 
@@ -77,11 +77,11 @@ model.compile(optimizer = "adam", loss = "sparse_categorical_cross_entropy", met
 
 n_epochs = 2
 for epoch in range(n_epochs):
-    time_start = time()
+    time_start = time.time()
 
     # Fit the model with training images
     model.fit(train_images, train_labels, epochs = 1)
-    print("Time spent on training:{0.3f}".format(time() - time_start))
+    print("Time spent on training:{}".format(time.time() - time_start))
 
     # Calculate the training loss & training accuracy
     train_loss, train_acc = model.evaluate(train_images, train_labels)
@@ -96,13 +96,15 @@ print(predictions.shape)
 
 
 ## Predict and visulaize the final outputs over test images 
-# Class names for CIFAR10
-class_names = ['airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
 
 fig = plt.figure(figsize=(10,10))
 for i in range(min(16, len(test_images))):
     ax = fig.add_subplot(4, 4, i+1, xticks = [], yticks = [])
     img = test_images[i]
-    ax.imshow(img)
-    color = "green" if predictions[i]==test_labels[i] else "red"
-    ax.title(f"Correct: {class_names[test_labels[i]]}, Predicted: {class_names[predictions[i]]}", color = color)  
+    ax.imshow(img, cmap='gray')
+    predict_label = predictions[i].argmax()
+    color = "green" if predict_label == test_labels[i] else "red"
+    ax.set_title(f"Predict: {predict_label}, Actual: {test_labels[i]}", color=color) 
+
+plt.tight_layout()
+plt.show() 
