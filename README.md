@@ -8,4 +8,5 @@ This is the collection of machine learning algorithms using deep learning framew
 | 3 | CNN | PyTorch | CIFAR10 | [Github](algorithms/CNN_cifar_pytorch.py)  | [Colab](notebooks/CNN_cifar_pytorch.ipynb) | | |Perfect base reference for all PyTorch Models |
 | 4 | CNN | PyTorch | MNIST |  | [Colab](notebooks/CNN_mnist_pytorch.ipynb) | | |Reuse the Pytorch CNN model (prepared for CIFAR10) to train on MNIST  |
 | 5 | CNN | Tensorflow | MNIST | [Github](algorithms/CNN_mnist_tf.py)  | [Colab](notebooks/CNN_mnist_tf.ipynb) |  
-| 6 | RNN from Scratch | PyTorch |  | [Github]()  | [Colab]() | | | |
+| 6 | RNN from Scratch | PyTorch |  |  | [Colab](notebooks/RNN_scratch_pytorch.ipynb) | | |Pure Python implementation |
+| 7 | RNN | PyTorch |  | | [Colab](notebooks/RNN_pytorch.ipynb) | | |Using PyTorch Module |
