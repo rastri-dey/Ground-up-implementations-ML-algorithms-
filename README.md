@@ -3,7 +3,7 @@ This is the collection of machine learning algorithms using deep learning framew
 
 | # | Algorithm | Framework | Dataset | Github | Colab | Train Time | Accuracy | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Multilayer Perceptron | PyTorch | CIFAR10 | [Github](algorithms/MLP_cifar_pytorch.py) | [Colab](notebooks/MLP_cifar_pytorch.ipynb) |
+| 1 | Multilayer Perceptron | PyTorch | CIFAR10 | [Github](algorithms/MLP_cifar_pytorch.py) | [Colab](notebooks/MLP_cifar_pytorch.ipynb) |14 mins|0.46|
 | 2 | Multilayer Perceptron | Tensorflow | MNIST | [Github](algorithms/MLP_mnist_tf.py)  | [Colab](notebooks/MLP_mnist_tf.ipynb) | 
 | 3 | CNN | PyTorch | CIFAR10 | [Github](algorithms/CNN_cifar_pytorch.py)  | [Colab](notebooks/CNN_cifar_pytorch.ipynb) | | |Perfect base reference for all PyTorch Models |
 | 4 | CNN | PyTorch | MNIST |  | [Colab](notebooks/CNN_mnist_pytorch.ipynb) |2 mins |0.96 |Reuse the Pytorch CNN model (prepared for CIFAR10) to train on MNIST  |
