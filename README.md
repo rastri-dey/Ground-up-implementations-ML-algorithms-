@@ -9,4 +9,4 @@ This is the collection of machine learning algorithms using deep learning framew
 | 4 | CNN | PyTorch | MNIST |  | [Colab](notebooks/CNN_mnist_pytorch.ipynb) |2 mins |0.96 |Reuse the Pytorch CNN model (prepared for CIFAR10) to train on MNIST  |
 | 5 | CNN | Tensorflow | MNIST | [Github](algorithms/CNN_mnist_tf.py)  | [Colab](notebooks/CNN_mnist_tf.ipynb) |12 s|0.98|  
 | 6 | RNN from Scratch | No PyTorch module used | Book by H G Wells "The Time Machine" |  | [Colab](notebooks/RNN_scratch_pytorch.ipynb) | 20 mins |Perplexity=1.2 |Pure Python implementation |
-| 7 | RNN | PyTorch |  | | [Colab](notebooks/RNN_pytorch.ipynb) | | |Using PyTorch Module | 
+| 7 | RNN | PyTorch |  | | [Colab](notebooks/RNN_pytorch.ipynb) | | |*Ongoing*| 
