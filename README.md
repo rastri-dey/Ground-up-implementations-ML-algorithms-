@@ -10,3 +10,4 @@ This is the collection of machine learning algorithms using deep learning framew
 | 5 | Convolutional Neural Network | Tensorflow | MNIST | [Github](algorithms/CNN_mnist_tf.py)  | [Colab](notebooks/CNN_mnist_tf.ipynb) |12 s|0.98|  
 | 6 | Recurrent Neural Network | From Scratch| Book by <br> H.G. Wells "The Time Machine" |  | [Colab](notebooks/RNN_scratch_pytorch.ipynb) | 20 mins |Perplexity = 1.2 |Pure Python implementation |
 | 7 | Recurrent Neural Network | PyTorch |Book by <br> H.G. Wells "The Time Machine" | | [Colab](notebooks/RNN_pytorch.ipynb) |3 mins|Perplexity = 1.1 | |
+| 8 | Transformers | PyTorch |Book by <br> H.G. Wells "The Time Machine" | | [Colab]() | | | |
