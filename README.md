@@ -5,7 +5,7 @@
 This project contains a curated collection of machine learning and deep learning algorithm implementations that are written from scratch (i.e., minimal dependencies), intended for learning, experimentation and research. The implementations are designed to work with popular frameworks like PyTorch and TensorFlow, along with GPU‑compatible training scripts and datasets.
 
 ## Project Structure
-
+```
 Ground-up-implementations-ML-algorithms-/
 ├── algorithms/                         # Core algorithm implementations
 │   ├── MLP_cifar_pytorch.py            # MLP using PyTorch
@@ -23,7 +23,7 @@ Ground-up-implementations-ML-algorithms-/
 └── LLM_scratch.ipynb                   # LLM using PyTorch
 ├── LICENSE                             # MIT License
 ├── README.md                          
-
+```
 ## Featured Algorithms
 
 | # | Algorithm | Framework | Dataset | Code | Train Time | Accuracy | Remarks |
