@@ -35,7 +35,7 @@ Ground-up-implementations-ML-algorithms-/
 | 5 | Convolutional Neural Network | Tensorflow | MNIST | [Github](algorithms/CNN_mnist_tf.py) [Colab](notebooks/CNN_mnist_tf.ipynb) |12 s|0.98|
 | 6 | Recurrent Neural Network | From Scratch| Book by <br> H.G. Wells "The Time Machine" |[Colab](notebooks/RNN_scratch_pytorch.ipynb) | 20 min |Perplexity = 1.2 |
 | 7 | Recurrent Neural Network | PyTorch |Book by <br> H.G. Wells "The Time Machine" |[Colab](notebooks/RNN_pytorch.ipynb) |3 min|Perplexity = 1.1|
-| 8 | Large Language Model (Using Generative Pre-Trained Transformers) | From Scratch |[Edith Wharton's <br> "The Verdict"](https://en.wikisource.org/wiki/The_Verdict)|[Colab](LLM_scratch.ipynb)|28 s| Perplexity = 1.9|
+| 8 | Large Language Model (Using Generative Pre-Trained Transformers) | PyTorch |[Edith Wharton's <br> "The Verdict"](https://en.wikisource.org/wiki/The_Verdict)|[Colab](LLM_scratch.ipynb)|28 s| Perplexity = 1.9|
 
 ## Code Usage
 
