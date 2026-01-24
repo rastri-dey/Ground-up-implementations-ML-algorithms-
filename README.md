@@ -69,4 +69,4 @@ Just open a Pull Request or Issue and we’ll help you get started!
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](LICENSE).
